@@ -23,3 +23,33 @@ const students = [
 		email: 'elias@test.com',
 	},
 ];
+
+
+
+
+//create a Student
+
+students.push({
+	id: uuidv4(),
+	name: 'Md. Sajjad',
+	email: 'sajjad@gmail.com',
+})
+
+//update date
+
+const updatedStudentID = 'ee729e84-a84e-4adf-b32c-4647a7114d5b';
+const updateDate = {
+	name: "Lucky Akter",
+	// email: "lucky@gmail.com"
+}
+
+const catechObject = students.findIndex(item => item.id === updatedStudentID);
+
+// console.log(catechObject);
+
+students[catechObject] = {
+	...students[catechObject],
+	... updateDate,
+}
+
+console.log(students);
