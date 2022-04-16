@@ -1,3 +1,13 @@
+/* 
+1. Easy Travers
+1.1 Get anything if you have the key O(1)
+2. filter
+3. Delete (medium) O(1)
+4. update (medium) O(1)
+5. Create a new one (easy) O(1)
+*/
+
+
 function uuidv4() {
 	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
 		const r = (Math.random() * 16) | 0;
@@ -51,5 +61,18 @@ students[idtoBeUpdated] = {
 
 delete students[idtoBeUpdated];
 
-console.log(students);
+//Travers
+
+/* for(let key in students){
+    console.log(students[key].name);
+}
+ */
+console.log(Object.keys(students)) //In here we get an arry of keys
+console.log(Object.values(students))
+// Object.keys(students).forEach(item => console.log(item)) // we apply any kind of array method
+// Object.keys(students).forEach(item => console.log(students[item].name)) // After using array method and getting keys, we can apply to the object 
+
+
+
+// console.log(students['67de71e5-0eac-474f-ab51-850ba9b31ed5']);
 
