@@ -34,5 +34,22 @@ const creatingObject = {
 
 students[creatingObject.id] = creatingObject;
 
-console.log(students['ebdf6b78-c32b-4b1d-8574-e8c655b05c1e']);
+//updated
+const idtoBeUpdated = 'ee729e84-a84e-4adf-b32c-4647a7114d5b'
+const updateObject = {
+    id: 'ee729e84-a84e-4adf-b32c-4647a7114d5b',
+    name: "Lucky Akter",
+    // email: "lucky@gmail.com"
+}
+
+students[idtoBeUpdated] = {
+    ...students[idtoBeUpdated],
+    ...updateObject
+}
+
+//delete 
+
+delete students[idtoBeUpdated];
+
+console.log(students);
 
