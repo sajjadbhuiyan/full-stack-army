@@ -32,4 +32,7 @@ const namesGroup = names.reduce((acumulator, current) =>{
     return acumulator;
 }, {})
 
-console.log(namesGroup)
+Object.keys(namesGroup).forEach((gorupKey) =>{
+	console.log(gorupKey);
+	namesGroup[gorupKey].forEach(value => console.log(value))
+})
