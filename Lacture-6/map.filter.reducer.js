@@ -5,7 +5,7 @@ const numbers = [1,2,3,4,false,'', NaN, 5,6];
 /* const strs = numbers.filter((v) => v).map((v) => v.toString())
 console.log(strs); */ // chain bole etare
 
-const result = numbers.reduce((accumulator, cur, index) => {
+/* const result = numbers.reduce((accumulator, cur, index) => {
     if (index === 0) accumulator += '[';
     if(cur){
         accumulator = accumulator + cur.toString() + (index < numbers.length - 1 ? ',' : '');
@@ -14,4 +14,13 @@ const result = numbers.reduce((accumulator, cur, index) => {
     return accumulator;
 }, '')
 
-console.log(result);
+console.log(result); */
+
+/* const result = numbers.reduce((accumulator, cur) => {
+    if(cur){
+        accumulator.push(cur.toString());
+    }
+    return accumulator;
+}, [])
+
+console.log(result); */
