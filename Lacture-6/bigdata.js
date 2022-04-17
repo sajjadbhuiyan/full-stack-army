@@ -1,4 +1,4 @@
-const arr = [];
+/* const arr = [];
 
 for (let i = 0; i <= 50000000; i++) {
     arr.push(i)
@@ -16,4 +16,4 @@ arr.reduce((acc, cur) =>{
     }
     return acc;
 }, []);
-console.timeEnd("Optimize");
+console.timeEnd("Optimize"); */
