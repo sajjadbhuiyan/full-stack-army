@@ -30,6 +30,7 @@ const namesGroup = names.reduce((acumulator, current) =>{
         acumulator[firstLetter] = [current]; // its mean object and object er first index
     }
     return acumulator;
+	
 }, {})
 
 Object.keys(namesGroup).forEach((gorupKey) =>{
