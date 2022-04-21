@@ -47,7 +47,7 @@ What is functional Progrmming?
              * Prove -> Function is a value
 */
 
-function hogaandMatha(pass){
+/* function hogaandMatha(pass){
     if (pass === 'hoga') {
         return "Matha"
     }else{
@@ -58,4 +58,4 @@ function hogaandMatha(pass){
 
 const fn = hogaandMatha("hoga")
 console.log(fn)
-
+ */
