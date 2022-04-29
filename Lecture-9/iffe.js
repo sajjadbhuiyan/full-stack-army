@@ -1,0 +1,6 @@
+/*
+
+eta joss. karon holo global varible shober kase accessable. but we need security. so we can use ifie function. Because it call after making. so I think you can understand. brooooooooooo 
+
+
+*/
