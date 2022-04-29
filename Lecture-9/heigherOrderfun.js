@@ -60,3 +60,13 @@ console.log("CUBE", cube(3));
 console.log("POWER8", power8);
 
 console.log(sqr(4))
+
+
+/* 
+
+parse
+Tree
+lexem
+execute
+
+*/
