@@ -1,4 +1,19 @@
-const hasMeeting = true;
+const promise1 = Promise.resolve("Prominse 1 Resolved");
+
+const promise2 = new Promise((resolve, reject) =>{
+    setTimeout(() =>{
+        resolve("Promise 2 Resolved")
+    }, 2000)
+})
+
+Promise.all([promise1, promise2])
+    .then((result)=>{
+        console.log(result);
+    })
+
+
+
+/* const hasMeeting = false;
 
 const meeting = new Promise((resolve, reject) =>{
     if (!hasMeeting) {
@@ -14,10 +29,25 @@ const meeting = new Promise((resolve, reject) =>{
     }
 })
 
+// const addToCalender = (meetingDetails) =>{
+//     return new Promise((resolve, reject)=>{
+//         const calender = `${meetingDetails.name} has been scheduled on ${meetingDetails.location} at ${meetingDetails.time}`
+//         resolve(calender)
+//     })
+// }
+
+const addToCalender = (meetingDetails) =>{
+        const calender = `${meetingDetails.name} has been scheduled on ${meetingDetails.location} at ${meetingDetails.time}`
+        return Promise.resolve(calender)
+}
+
 meeting
+    .then(addToCalender)  // if you want to chain
     .then((res) =>{
-        console.log(res)
+        console.log(JSON.stringify(res))
     })
     .catch((err) =>{
-        console.log(err)
+        console.log(err.message)
     })
+
+console.log("Hello") */
